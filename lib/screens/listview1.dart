@@ -7,25 +7,37 @@ class ListView1Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.indigoAccent,
-          title: const Text('List View S6'),
+          backgroundColor: Color.fromARGB(255, 0, 153, 255),
+          title: const Text('Ground Doctrines'),
           elevation: 0,
         ),
-        body: ListView(
-          children: const [
+        body: ListView(children: const [
           ListTile(
-            title: Text('Titulo Ruta'),
-            leading: Icon(Icons.title_sharp),
+            title: Text('Mobile Warfare'),
+             leading: CircleAvatar(
+            backgroundImage: AssetImage("lib/assets/1.jpg"), // No matter how big it is, it won't overflow
+            ),
             trailing: Icon(Icons.arrow_forward_ios),
           ),
           ListTile(
-            title: Text('Boton Ruta'),
-            leading: Icon(Icons.radio_button_checked),
+            title: Text('Superior Firepower'),
+             leading: CircleAvatar(
+            backgroundImage: AssetImage("lib/assets/2.jpg"), // No matter how big it is, it won't overflow
+            ),
             trailing: Icon(Icons.arrow_forward_ios),
           ),
           ListTile(
-            title: Text('Fondo Ruta'),
-            leading: Icon(Icons.square_foot),
+            title: Text('Grand Battle Plan'),
+             leading: CircleAvatar(
+            backgroundImage: AssetImage("lib/assets/3.jpg"), // No matter how big it is, it won't overflow
+            ),
+            trailing: Icon(Icons.arrow_forward_ios),
+          ),
+          ListTile(
+            title: Text('Mass Assault'),
+            leading: CircleAvatar(
+            backgroundImage: AssetImage("lib/assets/4.jpg"), // No matter how big it is, it won't overflow
+            ),
             trailing: Icon(Icons.arrow_forward_ios),
           )
         ]));
